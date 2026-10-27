@@ -626,7 +626,7 @@ h2 {
 
   .welcome-inner {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 0px;
     width: calc(100% - 38px);
     padding: 48px 0;
   }
@@ -638,7 +638,7 @@ h2 {
   .welcome-art {
     width: 100%;
     max-width: 430px;
-    height: 320px;
+    height: 430px;
     margin: auto;
   }
 
