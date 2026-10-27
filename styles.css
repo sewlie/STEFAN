@@ -147,6 +147,50 @@ h2 {
   text-underline-offset: 4px;
 }
 
+/* ---------- STACKED PHOTOS BESIDE STEFAN'S STORY ---------- */
+
+.story-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.story-photos .story-photo {
+  width: 100%;
+  margin: 0;
+}
+
+.story-photos .story-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+/* Keep the letter on the left and both photos on the right */
+@media (min-width: 769px) {
+  .story-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 32px;
+  }
+}
+
+/* Stack the letter and photos on smaller screens */
+@media (max-width: 768px) {
+  .story-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .story-box,
+  .story-photos {
+    width: 100%;
+  }
+}
+
 .menu-toggle {
   display: none;
 }
