@@ -232,6 +232,30 @@ h2 {
   outline-offset: 4px;
 }
 
+.button3 {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid #a65e3b;
+  border-radius: 7px;
+  background: #a65e3b;
+  color: #ffffff;
+  font: 700 1rem var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.button3:hover {
+  background: #85472c;
+  border-color: #85472c;
+  transform: translateY(-1px);
+}
+
+.button3:focus-visible {
+  outline: 3px solid var(--green-dark);
+  outline-offset: 4px;
+}
+
 .welcome-inner {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
